@@ -1,6 +1,18 @@
-# PulseFit — Dashboard Personal (React + Vite + Tailwind)
+# PulseFit — Dashboard Personal + Catat Aktivitas (React + Vite + Tailwind)
 
-Hasil konversi desain `desain/dashboard_personal_pulsefit/code.html` menjadi project React-Vite.
+Hasil konversi desain `desain/dashboard_personal_pulsefit/code.html` dan
+`desain/catat_aktivitas_pulsefit/code.html` menjadi project React-Vite dengan routing hash.
+
+## Rute
+
+| Hash | Halaman |
+|---|---|
+| `#/` | Dashboard (`src/pages/DashboardPage.jsx`) |
+| `#/catat-aktivitas` | Catat Aktivitas (`src/pages/LogActivityPage.jsx`) |
+
+Klik nav header "Dashboard" / "Catat Aktivitas", tombol "Mulai Latihan", atau
+"+ Catat Latihan Baru" untuk pindah halaman. Nav "Riwayat Latihan" dan
+"Komunitas & Target" menampilkan toast "Segera Hadir".
 
 ## Struktur
 
@@ -14,20 +26,33 @@ activity/
 └── src/
     ├── main.jsx
     ├── index.css
-    ├── App.jsx
-    ├── data/dashboard.js   # data chart, target, badge, avatar, nav
+    ├── App.jsx             # router hash + Header + Footer + Toast global
+    ├── data/
+    │   ├── dashboard.js    # data chart, target, badge, avatar, nav
+    │   └── logActivity.js  # SPORTS/MET, INTENSITIES, MOODS, gambar, target harian
+    ├── hooks/
+    │   ├── useRouter.js        # router hash (#/ , #/catat-aktivitas)
+    │   └── useLogCalculations.js # kalori MET, pace, BMI, BMR (port script asli)
+    ├── pages/
+    │   ├── DashboardPage.jsx
+    │   └── LogActivityPage.jsx   # state form + kalkulasi real-time + toast
     └── components/
-        ├── Header.jsx
-        ├── Greeting.jsx
-        ├── StatCards.jsx
-        ├── QuickActions.jsx
-        ├── ActivityChart.jsx   # tooltip hover ala script asli (React state)
-        ├── WeeklyTargets.jsx
-        ├── Badges.jsx
-        ├── Leaderboard.jsx
-        ├── BodyMetrics.jsx
+        ├── Header.jsx      # nav aktif mengikuti rute
         ├── Footer.jsx
-        └── WorkoutModal.jsx    # tambahan interaktif: form catat latihan + toast
+        ├── Toast.jsx       # toast kanan-bawah ala desain catat-aktivitas
+        ├── Greeting.jsx / StatCards.jsx / QuickActions.jsx / ...
+        ├── WorkoutModal.jsx
+        └── log/
+            ├── LogHero.jsx         # hero "Catat Aktivitas Olahraga Baru" + GPS Ready
+            ├── SportSelector.jsx   # 8 olahraga + MET + label terpilih
+            ├── SessionMeta.jsx     # nama sesi + tanggal + jam
+            ├── DurationDistance.jsx# jam/menit + jarak (disable utk gym/yoga/HIIT/badminton)
+            ├── IntensitySelector.jsx
+            ├── NotesMood.jsx
+            ├── FormActions.jsx     # Simpan + Reset + TipsCard Zona 2
+            ├── CalorieCard.jsx     # estimasi kkal + progress 650 kkal + pace
+            ├── BiometricsCard.jsx  # gender + slider BB/TB/usia + BMI + BMR
+            └── SyncCard.jsx        # toggle Strava/Google Fit + Tarik Data + banner PB 5K
 ```
 
 ## Menjalankan
@@ -37,7 +62,14 @@ npm install
 npm run dev
 ```
 
-Buka `http://localhost:5173`.
+Buka `http://localhost:5173` (Dashboard) lalu ke `http://localhost:5173/#/catat-aktivitas`.
+
+> Jika PowerShell memblokir `npm.ps1` (`running scripts is disabled`), jalankan via `cmd.exe`:
+> ```cmd
+> cd /d "c:\Data Muchlis\Vibe-Coding-Project\activity"
+> npm.cmd install --no-audit --no-fund
+> npm.cmd run dev
+> ```
 
 ## Build
 
@@ -46,10 +78,12 @@ npm run build
 npm run preview
 ```
 
-## Catatan
+## Logika (port 1:1 dari `<script>` desain catat-aktivitas)
 
-- Seluruh token Tailwind (warna `surface-*`, `primary`, `secondary`, `tertiary`, dsb. + spacing `space-*`, `gutter`, `margin` + font Space Grotesk/Hanken Grotesk) dipindahkan ke `tailwind.config.js`, jadi class seperti `bg-surface-container`, `text-on-surface-variant`, `px-margin` tetap sama seperti HTML asli.
-- Ikon `material-symbols-outlined` dimuat via Google Fonts di `index.html`.
-- Gambar logo/avatar memakai URL asli dari desain.
-- Chart tooltip yang semula memakai script DOM manual ditulis ulang sebagai React state (hover per bar).
-- `WorkoutModal` adalah peningkatan fungsional: tombol "Mulai Latihan" / "+ Catat Latihan Baru" membuka modal pilihan tipe (Lari/Sepeda/Gym/Renang), durasi, jarak, estimasi kalori, lalu toast konfirmasi.
+- Kalori: `MET × intensitas × 3.5 × BB / 200 × menit`, progress vs target harian 650 kkal.
+- Pace: `menit / km` → `MM'SS" / km`, `-` bila jarak/durasi nol.
+- BMI: `BB / (TB_m)²` + badge Kurang/Ideal/Berlebih/Obesitas.
+- BMR Mifflin-St Jeor: pria `10·BB + 6.25·TB − 5·usia + 5`, wanita `− 161`.
+- Olahraga tanpa jarak (Gym/Yoga/HIIT/Badminton) menonaktifkan input jarak & mereset ke 0.
+- Tombol Simpan / Reset / Tarik Data memicu toast kanan-bawah seperti desain asli.
+

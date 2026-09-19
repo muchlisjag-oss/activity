@@ -1,32 +1,62 @@
 import { LOGO_URL, AVATAR_RIAN, NAV_LINKS } from '../data/dashboard.js'
+import { useRouter } from '../hooks/useRouter.js'
 
-export default function Header({ onStartWorkout }) {
+export default function Header({ onStartWorkout, onNavigate, onSoon }) {
+  const { path, go } = useRouter()
+
+  const handleNav = (e, link) => {
+    e.preventDefault()
+    if (link.key === 'dashboard' || link.key === 'catat-aktivitas') {
+      go(link.to)
+      onNavigate?.(link.key)
+    } else {
+      onSoon?.(link.label)
+    }
+  }
+
+  const isActive = (link) => {
+    if (link.key === 'dashboard') return path === '/'
+    if (link.key === 'catat-aktivitas') return path === '/catat-aktivitas'
+    return false
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]">
       <div className="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter">
         <div className="flex items-center gap-space-lg shrink-0">
-          <div className="flex items-center gap-space-sm">
+          <button
+            type="button"
+            onClick={() => {
+              go('/')
+              onNavigate?.('dashboard')
+            }}
+            className="flex items-center gap-space-sm"
+            aria-label="PulseFit ke Dashboard"
+          >
             <img alt="PulseFit Brand Logo" className="h-8 w-auto object-contain" src={LOGO_URL} />
             <span className="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">
               Pulse<span className="text-primary">Fit</span>
             </span>
-          </div>
+          </button>
           <nav className="hidden xl:flex items-center gap-space-xs">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.path}
-                aria-current={link.active ? 'page' : undefined}
-                href="#"
-                onClick={(e) => e.preventDefault()}
-                className={
-                  link.active
-                    ? 'px-space-md py-space-sm rounded-xl transition-all bg-surface-container-high text-primary font-title-md'
-                    : 'px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all'
-                }
-              >
-                {link.label}
-              </a>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const active = isActive(link)
+              return (
+                <a
+                  key={link.key}
+                  aria-current={active ? 'page' : undefined}
+                  href={`#${link.to}`}
+                  onClick={(e) => handleNav(e, link)}
+                  className={
+                    active
+                      ? 'px-space-md py-space-sm rounded-xl transition-all bg-surface-container-high text-primary font-title-md'
+                      : 'px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all'
+                  }
+                >
+                  {link.label}
+                </a>
+              )
+            })}
           </nav>
         </div>
 
@@ -63,3 +93,4 @@ export default function Header({ onStartWorkout }) {
     </header>
   )
 }
+

@@ -11,10 +11,10 @@ export const AVATAR_DIMAS =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuAwfnD3dTczM_J8Mxs7LYIY-PWW-4xuf5_t00Ck2ol0Mh-xSPn0TpxycHB8lGLxr06zBRjSDrMc6c0UvwXf5qnh1slnSiVrAFiGABlyJqbeljC5SpotEIi15JlhfWwfkf8PuIcsGV189kjr9VCNQgSVvFd1JfzCzubWxacVNK6eeWRlY5hQYSVFenKhmno4AymXRDRMQ725WCpTltDLxZgLDqiT4yeTL1biGoQKmIEo3r6NOy8UaqwF'
 
 export const NAV_LINKS = [
-  { label: 'Dashboard', path: 'dashboard', active: true },
-  { label: 'Catat Aktivitas', path: 'catat-aktivitas', active: false },
-  { label: 'Riwayat Latihan', path: 'riwayat-latihan', active: false },
-  { label: 'Komunitas & Target', path: 'komunitas-target', active: false },
+  { label: 'Dashboard', key: 'dashboard', to: '/' },
+  { label: 'Catat Aktivitas', key: 'catat-aktivitas', to: '/catat-aktivitas' },
+  { label: 'Riwayat Latihan', key: 'riwayat-latihan', to: '/riwayat-latihan' },
+  { label: 'Komunitas & Target', key: 'komunitas-target', to: '/komunitas-target' },
 ]
 
 export const WEEKLY_CHART = [
