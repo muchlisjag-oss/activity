@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#84cc16", "on-surface-variant": "#c1cab0", "surface-container": "#171f33", "tertiary-fixed": "#acedff", "inverse-primary": "#416900", "primary-fixed-dim": "#91db2a", "error-container": "#93000a", "on-secondary": "#003824", "on-primary-container": "#315200", "inverse-on-surface": "#283044", "on-error": "#690005", "surface-bright": "#31394d", "outline": "#8b947d", "tertiary": "#74e3ff", "secondary-fixed": "#6ffbbe", "on-secondary-fixed": "#002113", "on-primary-fixed": "#102000", "tertiary-container": "#37c9e7", "on-surface": "#dae2fd", "on-background": "#dae2fd", "on-primary-fixed-variant": "#304f00", "secondary-container": "#00a572", "background": "#0b1326", "outline-variant": "#424936", "surface-container-low": "#131b2e", "on-tertiary-fixed": "#001f26", "on-error-container": "#ffdad6", "surface-tint": "#91db2a", "error": "#ffb4ab", "surface-container-high": "#222a3d", "on-secondary-fixed-variant": "#005236", "surface": "#0b1326", "on-tertiary": "#003640", "secondary-fixed-dim": "#4edea3", "inverse-surface": "#dae2fd", "primary": "#9ee939", "on-tertiary-container": "#00515f", "surface-container-highest": "#2d3449", "on-secondary-container": "#00311f", "on-tertiary-fixed-variant": "#004e5c", "secondary": "#4edea3", "tertiary-fixed-dim": "#4cd7f6", "surface-container-lowest": "#060e20", "primary-fixed": "#acf847", "surface-variant": "#2d3449", "on-primary": "#1f3700", "surface-dim": "#0b1326" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "margin": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem" }, "fontFamily": { "label-sm": [ "Space Grotesk" ], "display-lg-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "display-stat-mobile": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "display-lg": [ "Space Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "title-md": [ "Hanken Grotesk" ], "display-stat": [ "Space Grotesk" ], "body-md": [ "Hanken Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-md": [ "Space Grotesk" ] }, "fontSize": { "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "display-lg-mobile": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-stat-mobile": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-lg": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "display-stat": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.04em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><img alt="PulseFit Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTdMD7Je2fDvj5RiyHhQ6wh_aSVYyB_6uKiCxJWWzNUuO0nP3cP469suVMUECAfa3gLAz9ravOyh-C8cCfijLZh9zPoMbrIkq-6mT4ou_P0z2NG_2gwn9k70nHsDYDRtLG2K64-dBaqfzrSyx-V8WzKbeeu1b8X8AwfQwbJWEoweR45PN9CuAIDqfFfeoZjCL9fPHdoFdqqgZMh7C9JaNdr-OC5axqal0Kh3EV61jQuGDFJS3osWtY"/><span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">Pulse<span class="text-primary">Fit</span></span></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-title-md"><a class="px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="catat-aktivitas" href="#">Catat Aktivitas</a><a aria-current="page" class="px-space-md py-space-sm rounded-xl transition-all bg-surface-container-high text-primary font-title-md" data-path="riwayat-latihan" href="#">Riwayat Latihan</a><a class="px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="komunitas-target" href="#">Komunitas &amp; Target</a></nav></div><div class="flex items-center gap-space-md shrink-0"><button class="flex items-center gap-space-xs bg-primary hover:bg-primary-fixed-dim text-on-primary px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline">Mulai Latihan</span></button><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high text-primary-fixed font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-primary">local_fire_department</span><span>14 Hari</span></div><button class="relative w-10 h-10 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6UVs3MXWQ8nGuHL_5ZcmG73KAE-fTEW_fmyus4llHehMulCZUxWkwT2ZYBety7B9yqppB-AUGeYk0aTKOlyPjuTzEfiDTUSloIDS1B5AuXWQo1JCx9vylXsxiQ45CoB8N9IyqZnjgdGuI2vbwqR_rcLRD1L7bu2tW26hyX7HzVNBNfzI51Vcc9P-6Ya3S08L6dEnMO15iuELuQxOjxnOJKr1weC7kaaavmiFoH6gwTalHKHp0V1u_"/><div class="hidden md:flex flex-col"><span class="font-title-md text-body-md text-on-surface leading-tight">Rian Pratama</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pro Athlete</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Ambient Glow Backdrop -->
+<div class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-lg md:py-space-xl overflow-hidden">
+<div class="absolute top-10 right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute bottom-10 left-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Title & Top Level Overview Strip -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Logbook Telemetri Atlet</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Riwayat &amp; Logbook Latihan</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-1">
+          Catatan lengkap seluruh aktivitas fisik Anda yang tercatat dengan sinkronisasi sensor otomatis.
+        </p>
+</div>
+<!-- Quick Export & Share Actions -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-all shadow-sm" id="btn-export">
+<span class="material-symbols-outlined text-[18px] text-tertiary">download</span>
+<span>Ekspor Data (CSV/PDF)</span>
+</button>
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-fixed-dim text-on-primary px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-all shadow-[0_0_20px_rgba(132,204,22,0.25)]" id="btn-open-share">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Bagikan Ringkasan</span>
+</button>
+</div>
+</div>
+<!-- Monthly Streak & Training Heatmap Strip -->
+<section class="bg-surface-container-low/90 backdrop-blur-md rounded-xl p-space-md md:p-space-lg mb-space-lg shadow-sm">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-space-xs rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block leading-tight">Aktivitas Kalender &amp; Heatmap</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Oktober 2024 • 14 Hari Konsisten</span>
+</div>
+</div>
+<!-- Legend -->
+<div class="flex items-center gap-space-md text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-surface-container-highest"></span> Istirahat</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-primary/40"></span> Ringan</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-primary/75"></span> Sedang</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-primary shadow-[0_0_10px_rgba(132,204,22,0.6)]"></span> Intensif / PR</span>
+</div>
+</div>
+<!-- 31 Days Grid Interactive Heatmap Strip -->
+<div class="grid grid-cols-7 sm:grid-cols-11 md:grid-cols-16 lg:grid-cols-31 gap-1.5 text-center">
+<!-- Weekdays/Days generator pattern -->
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="1 Okt - 450 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">01</span>
+<div class="w-full aspect-square rounded-md bg-primary/75 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="2 Okt - 320 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">02</span>
+<div class="w-full aspect-square rounded-md bg-primary/40 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="3 Okt - Istirahat">
+<span class="font-label-sm text-label-sm text-on-surface-variant">03</span>
+<div class="w-full aspect-square rounded-md bg-surface-container-highest group-hover:bg-surface-bright transition-colors"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="4 Okt - 610 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">04</span>
+<div class="w-full aspect-square rounded-md bg-primary group-hover:scale-110 transition-transform shadow-[0_0_8px_rgba(132,204,22,0.5)]"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="5 Okt - 280 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">05</span>
+<div class="w-full aspect-square rounded-md bg-primary/40 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="6 Okt - Istirahat">
+<span class="font-label-sm text-label-sm text-on-surface-variant">06</span>
+<div class="w-full aspect-square rounded-md bg-surface-container-highest group-hover:bg-surface-bright transition-colors"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="7 Okt - 520 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">07</span>
+<div class="w-full aspect-square rounded-md bg-primary/75 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="8 Okt - 710 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">08</span>
+<div class="w-full aspect-square rounded-md bg-primary group-hover:scale-110 transition-transform shadow-[0_0_8px_rgba(132,204,22,0.5)]"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="9 Okt - 340 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">09</span>
+<div class="w-full aspect-square rounded-md bg-primary/40 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="10 Okt - Istirahat">
+<span class="font-label-sm text-label-sm text-on-surface-variant">10</span>
+<div class="w-full aspect-square rounded-md bg-surface-container-highest group-hover:bg-surface-bright transition-colors"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="11 Okt - 410 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">11</span>
+<div class="w-full aspect-square rounded-md bg-primary/75 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="12 Okt - 890 kkal (Long Run)">
+<span class="font-label-sm text-label-sm text-on-surface-variant">12</span>
+<div class="w-full aspect-square rounded-md bg-primary group-hover:scale-110 transition-transform shadow-[0_0_8px_rgba(132,204,22,0.5)]"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="13 Okt - Istirahat">
+<span class="font-label-sm text-label-sm text-on-surface-variant">13</span>
+<div class="w-full aspect-square rounded-md bg-surface-container-highest group-hover:bg-surface-bright transition-colors"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="14 Okt - 300 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">14</span>
+<div class="w-full aspect-square rounded-md bg-primary/40 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="15 Okt - 460 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">15</span>
+<div class="w-full aspect-square rounded-md bg-primary/75 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="16 Okt - Istirahat">
+<span class="font-label-sm text-label-sm text-on-surface-variant">16</span>
+<div class="w-full aspect-square rounded-md bg-surface-container-highest group-hover:bg-surface-bright transition-colors"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="17 Okt - 520 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">17</span>
+<div class="w-full aspect-square rounded-md bg-primary/75 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="18 Okt - 390 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">18</span>
+<div class="w-full aspect-square rounded-md bg-primary/40 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="19 Okt - Istirahat">
+<span class="font-label-sm text-label-sm text-on-surface-variant">19</span>
+<div class="w-full aspect-square rounded-md bg-surface-container-highest group-hover:bg-surface-bright transition-colors"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="20 Okt - 140 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">20</span>
+<div class="w-full aspect-square rounded-md bg-primary/40 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="21 Okt - 580 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">21</span>
+<div class="w-full aspect-square rounded-md bg-primary/75 group-hover:scale-110 transition-transform"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="22 Okt - Istirahat">
+<span class="font-label-sm text-label-sm text-on-surface-variant">22</span>
+<div class="w-full aspect-square rounded-md bg-surface-container-highest group-hover:bg-surface-bright transition-colors"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="23 Okt - 350 kkal">
+<span class="font-label-sm text-label-sm text-on-surface-variant">23</span>
+<div class="w-full aspect-square rounded-md bg-primary group-hover:scale-110 transition-transform shadow-[0_0_8px_rgba(132,204,22,0.5)]"></div>
+</div>
+<!-- Active / Selected Today -->
+<div class="flex flex-col items-center gap-1 group cursor-pointer" title="24 Okt - Hari Ini (410 kkal)">
+<span class="font-label-sm text-label-sm text-primary font-bold">24</span>
+<div class="w-full aspect-square rounded-md bg-primary group-hover:scale-110 transition-transform shadow-[0_0_12px_rgba(132,204,22,0.8)] ring-2 ring-on-surface"></div>
+</div>
+<!-- Remaining Month Days (Planned / Inactive) -->
+<div class="flex flex-col items-center gap-1 opacity-30"><span class="font-label-sm text-label-sm">25</span><div class="w-full aspect-square rounded-md bg-surface-container-highest"></div></div>
+<div class="flex flex-col items-center gap-1 opacity-30"><span class="font-label-sm text-label-sm">26</span><div class="w-full aspect-square rounded-md bg-surface-container-highest"></div></div>
+<div class="flex flex-col items-center gap-1 opacity-30"><span class="font-label-sm text-label-sm">27</span><div class="w-full aspect-square rounded-md bg-surface-container-highest"></div></div>
+<div class="flex flex-col items-center gap-1 opacity-30"><span class="font-label-sm text-label-sm">28</span><div class="w-full aspect-square rounded-md bg-surface-container-highest"></div></div>
+<div class="flex flex-col items-center gap-1 opacity-30"><span class="font-label-sm text-label-sm">29</span><div class="w-full aspect-square rounded-md bg-surface-container-highest"></div></div>
+<div class="flex flex-col items-center gap-1 opacity-30"><span class="font-label-sm text-label-sm">30</span><div class="w-full aspect-square rounded-md bg-surface-container-highest"></div></div>
+<div class="flex flex-col items-center gap-1 opacity-30"><span class="font-label-sm text-label-sm">31</span><div class="w-full aspect-square rounded-md bg-surface-container-highest"></div></div>
+</div>
+</section>
+<!-- Filter and Control Bar -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-lg shadow-sm flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search & Selectors -->
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<!-- Search Box -->
+<div class="relative flex-1 min-w-[220px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[20px] text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface pl-10 pr-3 py-2 rounded-xl text-body-md font-body-md placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary" id="filter-search" placeholder="Cari sesi latihan..." type="text"/>
+</div>
+<!-- Sport Category -->
+<div class="relative min-w-[140px]">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface px-3 py-2 pr-8 rounded-xl text-body-md font-body-md focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="filter-sport">
+<option value="Semua">Semua Olahraga</option>
+<option value="Lari">Lari</option>
+<option value="Gym">Gym &amp; Core</option>
+<option value="Sepeda">Sepeda</option>
+<option value="Renang">Renang</option>
+<option value="Yoga">Yoga</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Intensity Filter -->
+<div class="relative min-w-[130px]">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface px-3 py-2 pr-8 rounded-xl text-body-md font-body-md focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="filter-intensity">
+<option value="Semua">Semua Intensitas</option>
+<option value="Ringan">Ringan</option>
+<option value="Sedang">Sedang</option>
+<option value="Berat">Berat</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Date Range Filter -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-3 py-2 rounded-xl text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">date_range</span>
+<span>Bulan Ini – Oktober 2024</span>
+</div>
+</div>
+<!-- View Switcher -->
+<div class="flex items-center self-end xl:self-auto bg-surface-container-lowest p-1 rounded-xl">
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md transition-all" id="view-table-btn">
+<span class="material-symbols-outlined text-[18px]">table_rows</span>
+<span>Daftar</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" id="view-calendar-btn">
+<span class="material-symbols-outlined text-[18px]">calendar_view_month</span>
+<span>Kalender</span>
+</button>
+</div>
+</div>
+<!-- Main View 1: Detailed Table / Cards -->
+<div class="flex flex-col gap-space-sm mb-space-lg" id="container-table-view">
+<!-- Desktop Table Header -->
+<div class="hidden lg:grid grid-cols-12 gap-space-md px-space-md py-space-xs text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">
+<div class="col-span-4">Aktivitas &amp; Waktu</div>
+<div class="col-span-2 text-right">Durasi</div>
+<div class="col-span-2 text-right">Jarak &amp; Laju</div>
+<div class="col-span-2 text-right">Kalori &amp; Beban</div>
+<div class="col-span-2 text-center">Tindakan</div>
+</div>
+<!-- Row 1: Lari Pagi GBK -->
+<div class="workout-card bg-surface-container/85 hover:bg-surface-container-high rounded-xl p-space-md transition-all duration-200 shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md lg:items-center">
+<!-- Col 1: Sport Info -->
+<div class="lg:col-span-4 flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">directions_run</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface truncate">Lari Pagi GBK</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary/20 text-primary">Outdoor</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 24 Okt 2024, 06:15 WIB
+            </p>
+</div>
+</div>
+<!-- Col 2: Duration -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Durasi:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface block">42<span class="text-body-md font-body-md text-on-surface-variant">m</span></span>
+<span class="font-label-sm text-label-sm text-secondary">Optimal</span>
+</div>
+</div>
+<!-- Col 3: Distance & Pace -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Jarak &amp; Laju:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary block">6.5 <span class="text-body-md font-body-md text-on-surface-variant">km</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pace 6'27" /km</span>
+</div>
+</div>
+<!-- Col 4: Calories & Intensity -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Energi &amp; Intensitas:</span>
+<div class="text-right flex flex-col items-end">
+<div class="flex items-center gap-1 text-on-surface font-title-md text-title-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">local_fire_department</span>
+<span>410 kkal</span>
+</div>
+<span class="px-2 py-0.5 mt-1 rounded-full text-label-sm font-label-sm bg-tertiary/20 text-tertiary font-bold">Sedang</span>
+</div>
+</div>
+<!-- Col 5: Actions -->
+<div class="lg:col-span-2 flex items-center justify-end lg:justify-center gap-space-xs pt-2 lg:pt-0 border-t border-surface-bright/20 lg:border-none">
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Ubah Data">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-colors" onclick="showSharePreview('Lari Pagi GBK', '6.5 km', '42 menit', '410 kkal')" title="Bagikan Latihan">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" title="Hapus Data">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Row 2: Upper Body & Core Gym -->
+<div class="workout-card bg-surface-container/85 hover:bg-surface-container-high rounded-xl p-space-md transition-all duration-200 shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md lg:items-center">
+<!-- Col 1 -->
+<div class="lg:col-span-4 flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary/20 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">fitness_center</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface truncate">Upper Body &amp; Core Gym</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant">Fitness</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 23 Okt 2024, 17:30 WIB
+            </p>
+</div>
+</div>
+<!-- Col 2 -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Durasi:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface block">55<span class="text-body-md font-body-md text-on-surface-variant">m</span></span>
+<span class="font-label-sm text-label-sm text-primary">Target Tercapai</span>
+</div>
+</div>
+<!-- Col 3 -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Jarak &amp; Laju:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant block">-</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Beban Angkat: 4.8t</span>
+</div>
+</div>
+<!-- Col 4 -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Energi &amp; Intensitas:</span>
+<div class="text-right flex flex-col items-end">
+<div class="flex items-center gap-1 text-on-surface font-title-md text-title-md">
+<span class="material-symbols-outlined text-[16px] text-error">local_fire_department</span>
+<span>350 kkal</span>
+</div>
+<span class="px-2 py-0.5 mt-1 rounded-full text-label-sm font-label-sm bg-error-container text-error font-bold">Berat</span>
+</div>
+</div>
+<!-- Col 5 -->
+<div class="lg:col-span-2 flex items-center justify-end lg:justify-center gap-space-xs pt-2 lg:pt-0 border-t border-surface-bright/20 lg:border-none">
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Ubah Data">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-colors" onclick="showSharePreview('Upper Body &amp; Core Gym', 'Strenth', '55 menit', '350 kkal')" title="Bagikan Latihan">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" title="Hapus Data">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Row 3: Gowes Akhir Pekan -->
+<div class="workout-card bg-surface-container/85 hover:bg-surface-container-high rounded-xl p-space-md transition-all duration-200 shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md lg:items-center">
+<!-- Col 1 -->
+<div class="lg:col-span-4 flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed-dim/20 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">directions_bike</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface truncate">Gowes Akhir Pekan</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary/20 text-primary">GPS Rute</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 21 Okt 2024, 07:00 WIB
+            </p>
+</div>
+</div>
+<!-- Col 2 -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Durasi:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface block">1<span class="text-body-md font-body-md text-on-surface-variant">j</span> 20<span class="text-body-md font-body-md text-on-surface-variant">m</span></span>
+<span class="font-label-sm text-label-sm text-secondary">Endurance</span>
+</div>
+</div>
+<!-- Col 3 -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Jarak &amp; Laju:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary block">25.4 <span class="text-body-md font-body-md text-on-surface-variant">km</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg 19.1 km/h</span>
+</div>
+</div>
+<!-- Col 4 -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Energi &amp; Intensitas:</span>
+<div class="text-right flex flex-col items-end">
+<div class="flex items-center gap-1 text-on-surface font-title-md text-title-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">local_fire_department</span>
+<span>580 kkal</span>
+</div>
+<span class="px-2 py-0.5 mt-1 rounded-full text-label-sm font-label-sm bg-tertiary/20 text-tertiary font-bold">Sedang</span>
+</div>
+</div>
+<!-- Col 5 -->
+<div class="lg:col-span-2 flex items-center justify-end lg:justify-center gap-space-xs pt-2 lg:pt-0 border-t border-surface-bright/20 lg:border-none">
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Ubah Data">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-colors" onclick="showSharePreview('Gowes Akhir Pekan', '25.4 km', '1j 20m', '580 kkal')" title="Bagikan Latihan">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" title="Hapus Data">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Row 4: Vinyasa Yoga Recovery -->
+<div class="workout-card bg-surface-container/85 hover:bg-surface-container-high rounded-xl p-space-md transition-all duration-200 shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md lg:items-center">
+<!-- Col 1 -->
+<div class="lg:col-span-4 flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/20 text-secondary-fixed-dim flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">self_improvement</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface truncate">Vinyasa Yoga Recovery</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant">Pemulihan</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 20 Okt 2024, 19:00 WIB
+            </p>
+</div>
+</div>
+<!-- Col 2 -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Durasi:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface block">35<span class="text-body-md font-body-md text-on-surface-variant">m</span></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Relaksasi</span>
+</div>
+</div>
+<!-- Col 3 -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Jarak &amp; Laju:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant block">-</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">HR Rata-rata 98 BPM</span>
+</div>
+</div>
+<!-- Col 4 -->
+<div class="lg:col-span-2 flex justify-between lg:justify-end items-center">
+<span class="lg:hidden text-label-sm font-label-sm text-on-surface-variant uppercase">Energi &amp; Intensitas:</span>
+<div class="text-right flex flex-col items-end">
+<div class="flex items-center gap-1 text-on-surface font-title-md text-title-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">local_fire_department</span>
+<span>140 kkal</span>
+</div>
+<span class="px-2 py-0.5 mt-1 rounded-full text-label-sm font-label-sm bg-secondary/20 text-secondary font-bold">Ringan</span>
+</div>
+</div>
+<!-- Col 5 -->
+<div class="lg:col-span-2 flex items-center justify-end lg:justify-center gap-space-xs pt-2 lg:pt-0 border-t border-surface-bright/20 lg:border-none">
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Ubah Data">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-colors" onclick="showSharePreview('Vinyasa Yoga Recovery', 'Mobilitas', '35 menit', '140 kkal')" title="Bagikan Latihan">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" title="Hapus Data">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main View 2: Alternative Calendar View (Hidden by default) -->
+<div class="hidden flex flex-col gap-space-md mb-space-lg" id="container-calendar-view">
+<div class="bg-surface-container-low rounded-xl p-space-md">
+<div class="grid grid-cols-7 gap-2 text-center mb-3">
+<div class="font-label-md text-label-md text-on-surface-variant">SEN</div>
+<div class="font-label-md text-label-md text-on-surface-variant">SEL</div>
+<div class="font-label-md text-label-md text-on-surface-variant">RAB</div>
+<div class="font-label-md text-label-md text-on-surface-variant">KAM</div>
+<div class="font-label-md text-label-md text-on-surface-variant">JUM</div>
+<div class="font-label-md text-label-md text-on-surface-variant text-primary">SAB</div>
+<div class="font-label-md text-label-md text-on-surface-variant text-primary">MIN</div>
+</div>
+<div class="grid grid-cols-7 gap-2">
+<!-- Calendar Tiles Demo -->
+<div class="min-h-[100px] bg-surface-container-lowest/60 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">30 Sep</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">1</span>
+<span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-[9px] truncate">Lari 5km</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">2</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary/20 text-secondary font-label-sm text-[9px] truncate">Gym Core</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/30 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">3</span>
+<span class="text-on-surface-variant/40 font-label-sm text-[9px]">Rest</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">4</span>
+<span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-[9px] truncate">Lari 8km</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">5</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary/20 text-tertiary font-label-sm text-[9px] truncate">Sepeda 15k</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/30 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">6</span>
+<span class="text-on-surface-variant/40 font-label-sm text-[9px]">Rest</span>
+</div>
+<!-- Mid Week Tiles -->
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">7</span>
+<span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-[9px] truncate">Tempo 6k</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">8</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary/20 text-secondary font-label-sm text-[9px] truncate">Leg Day</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">9</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed/20 text-secondary-fixed-dim font-label-sm text-[9px] truncate">Yoga</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/30 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">10</span>
+<span class="text-on-surface-variant/40 font-label-sm text-[9px]">Rest</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">11</span>
+<span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-[9px] truncate">Interval 5k</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">12</span>
+<span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-[9px] truncate">Long Run 12k</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/30 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">13</span>
+<span class="text-on-surface-variant/40 font-label-sm text-[9px]">Rest</span>
+</div>
+<!-- Highlight Week containing Current workouts -->
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">20</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed/20 text-secondary-fixed-dim font-label-sm text-[9px] truncate">Yoga Recov</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">21</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary/20 text-tertiary font-label-sm text-[9px] truncate">Gowes 25k</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/30 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">22</span>
+<span class="text-on-surface-variant/40 font-label-sm text-[9px]">Rest</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/70 rounded-lg p-2 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">23</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-error font-label-sm text-[9px] truncate">Upper Gym</span>
+</div>
+<div class="min-h-[100px] bg-surface-container-high rounded-lg p-2 flex flex-col justify-between ring-1 ring-primary">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">24 (Hari Ini)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-primary text-on-primary font-label-sm text-[9px] font-bold truncate">Lari GBK 6.5k</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/30 rounded-lg p-2 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-on-surface-variant">25</span>
+</div>
+<div class="min-h-[100px] bg-surface-container/30 rounded-lg p-2 flex flex-col justify-between opacity-50">
+<span class="font-label-sm text-label-sm text-on-surface-variant">26</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Monthly Telemetry Summary Bottom Bar (Bento Metrics Bar) -->
+<section class="bg-gradient-to-r from-surface-container-lowest via-surface-container-low to-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-md border-b border-surface-bright/20 pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">insights</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Ringkasan Bulan Ini (Oktober 2024)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full uppercase tracking-wider">
+          +18.4% Kemajuan vs September
+        </span>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Total Sesi -->
+<div class="flex items-center gap-space-sm bg-surface-container/60 p-space-md rounded-xl">
+<div class="p-space-sm rounded-lg bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">exercise</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Total Aktivitas</span>
+<span class="font-display-stat text-display-stat text-on-surface leading-none">18 <span class="font-headline-sm text-headline-sm text-on-surface-variant">Sesi</span></span>
+</div>
+</div>
+<!-- Total Kalori -->
+<div class="flex items-center gap-space-sm bg-surface-container/60 p-space-md rounded-xl">
+<div class="p-space-sm rounded-lg bg-tertiary/10 text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Total Kalori</span>
+<span class="font-display-stat text-display-stat text-on-surface leading-none">8,420 <span class="font-headline-sm text-headline-sm text-on-surface-variant">kkal</span></span>
+</div>
+</div>
+<!-- Total Durasi -->
+<div class="flex items-center gap-space-sm bg-surface-container/60 p-space-md rounded-xl">
+<div class="p-space-sm rounded-lg bg-secondary/10 text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">timer</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Total Waktu</span>
+<span class="font-display-stat text-display-stat text-on-surface leading-none">16<span class="font-headline-sm text-headline-sm text-on-surface-variant">j</span> 30<span class="font-headline-sm text-headline-sm text-on-surface-variant">m</span></span>
+</div>
+</div>
+<!-- Total Jarak -->
+<div class="flex items-center gap-space-sm bg-surface-container/60 p-space-md rounded-xl">
+<div class="p-space-sm rounded-lg bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">route</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Total Jarak Tempuh</span>
+<span class="font-display-stat text-display-stat text-primary leading-none">68.2 <span class="font-headline-sm text-headline-sm text-on-surface-variant">km</span></span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Share Modal / Pop-up Preview -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden items-center justify-center p-space-md" id="share-modal">
+<div class="relative w-full max-w-md bg-surface-container-low rounded-xl p-space-lg shadow-2xl flex flex-col">
+<!-- Modal Close Button -->
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface p-1 rounded-lg" id="close-modal-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Modal Header -->
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase mb-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Kartu Prestasi PulseFit</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Bagikan Pencapaian</h3>
+<!-- Graphic Story Preview Card -->
+<div class="relative rounded-xl overflow-hidden bg-gradient-to-br from-surface-container-highest via-surface-container to-surface-container-lowest p-space-md shadow-inner mb-space-md" id="share-card-visual">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">Pulse<span class="text-primary">Fit</span></span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/20 text-primary px-2 py-0.5 rounded-full">Oktober 2024</span>
+</div>
+<div class="mb-4">
+<span class="font-headline-md text-headline-md text-on-surface block truncate" id="preview-title">Lari Pagi GBK</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Rian Pratama • Pro Athlete</span>
+</div>
+<!-- Telemetry Stats in Share Card -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-lowest/70 p-3 rounded-lg backdrop-blur-sm mb-2">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Jarak/Beban</span>
+<span class="font-headline-sm text-headline-sm text-primary" id="preview-distance">6.5 km</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Durasi</span>
+<span class="font-headline-sm text-headline-sm text-on-surface" id="preview-duration">42m</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Kalori</span>
+<span class="font-headline-sm text-headline-sm text-tertiary" id="preview-calories">410 kkal</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant pt-2">
+<span>#KeepMovingWithPulseFit</span>
+<span class="text-primary">pulsefit.app</span>
+</div>
+</div>
+<!-- Social Media Share Buttons -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-sm">
+<button class="flex items-center justify-center gap-space-xs bg-secondary-container hover:bg-secondary text-on-secondary px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-all" onclick="simulateShare('WhatsApp')">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Kirim WhatsApp</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs bg-surface-container-high hover:bg-surface-bright text-on-surface px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-all" onclick="simulateShare('Instagram Story')">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>IG Story</span>
+</button>
+</div>
+<button class="w-full flex items-center justify-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface py-2 rounded-xl font-label-md text-label-md transition-colors" onclick="simulateShare('Tautan Disalin')">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Salin Tautan Aktivitas</span>
+</button>
+</div>
+</div>
+<!-- Toast Notification element -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-surface-container-highest text-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center gap-2 border-none" id="toast">
+<span class="material-symbols-outlined text-primary text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-md text-body-md" id="toast-msg">Notifikasi</span>
+</div>
+<script>
+    // Tab and View toggle functionality
+    const btnTableView = document.getElementById('view-table-btn');
+    const btnCalendarView = document.getElementById('view-calendar-btn');
+    const containerTable = document.getElementById('container-table-view');
+    const containerCalendar = document.getElementById('container-calendar-view');
+
+    btnTableView.addEventListener('click', () => {
+      containerTable.classList.remove('hidden');
+      containerCalendar.classList.add('hidden');
+      btnTableView.className = 'flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md transition-all';
+      btnCalendarView.className = 'flex items-center gap-1.5 px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all';
+    });
+
+    btnCalendarView.addEventListener('click', () => {
+      containerTable.classList.add('hidden');
+      containerCalendar.classList.remove('hidden');
+      btnCalendarView.className = 'flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md transition-all';
+      btnTableView.className = 'flex items-center gap-1.5 px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all';
+    });
+
+    // Share Modal Functionality
+    const shareModal = document.getElementById('share-modal');
+    const btnOpenShare = document.getElementById('btn-open-share');
+    const btnCloseModal = document.getElementById('close-modal-btn');
+    const previewTitle = document.getElementById('preview-title');
+    const previewDistance = document.getElementById('preview-distance');
+    const previewDuration = document.getElementById('preview-duration');
+    const previewCalories = document.getElementById('preview-calories');
+
+    function openModal() {
+      shareModal.classList.remove('hidden');
+      shareModal.classList.add('flex');
+    }
+
+    function closeModal() {
+      shareModal.classList.add('hidden');
+      shareModal.classList.remove('flex');
+    }
+
+    btnOpenShare.addEventListener('click', () => {
+      previewTitle.textContent = "Ringkasan Latihan Oktober";
+      previewDistance.textContent = "68.2 km";
+      previewDuration.textContent = "16j 30m";
+      previewCalories.textContent = "8,420 kkal";
+      openModal();
+    });
+
+    btnCloseModal.addEventListener('click', closeModal);
+    shareModal.addEventListener('click', (e) => {
+      if (e.target === shareModal) closeModal();
+    });
+
+    window.showSharePreview = function(title, dist, dur, cal) {
+      previewTitle.textContent = title;
+      previewDistance.textContent = dist;
+      previewDuration.textContent = dur;
+      previewCalories.textContent = cal;
+      openModal();
+    };
+
+    // Filter simulation
+    const searchInput = document.getElementById('filter-search');
+    const workoutCards = document.querySelectorAll('.workout-card');
+
+    searchInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      workoutCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(q)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+
+    // Export Feedback Simulation
+    const btnExport = document.getElementById('btn-export');
+    btnExport.addEventListener('click', () => {
+      showToast('Mengunduh riwayat logbook (CSV/PDF)...');
+    });
+
+    window.simulateShare = function(channel) {
+      closeModal();
+      showToast('Berhasil membagikan ke ' + channel + '!');
+    };
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      toastMsg.textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3200);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.15)]"><div class="max-w-[1440px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-md text-body-md"><div class="flex items-center gap-space-sm"><img alt="PulseFit Brand Logo" class="h-6 w-auto object-contain grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTdMD7Je2fDvj5RiyHhQ6wh_aSVYyB_6uKiCxJWWzNUuO0nP3cP469suVMUECAfa3gLAz9ravOyh-C8cCfijLZh9zPoMbrIkq-6mT4ou_P0z2NG_2gwn9k70nHsDYDRtLG2K64-dBaqfzrSyx-V8WzKbeeu1b8X8AwfQwbJWEoweR45PN9CuAIDqfFfeoZjCL9fPHdoFdqqgZMh7C9JaNdr-OC5axqal0Kh3EV61jQuGDFJS3osWtY"/><span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">© 2024 PulseFit Performance Labs. Hak cipta dilindungi.</span></div><div class="flex items-center gap-space-lg font-label-md text-label-md text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Privasi</a><a class="hover:text-primary transition-colors" href="#">Syarat Layanan</a><a class="hover:text-primary transition-colors" href="#">Dukungan Sensor &amp; GPS</a></div></div></footer></body></html>

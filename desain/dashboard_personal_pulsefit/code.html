@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#84cc16", "on-surface-variant": "#c1cab0", "surface-container": "#171f33", "tertiary-fixed": "#acedff", "inverse-primary": "#416900", "primary-fixed-dim": "#91db2a", "error-container": "#93000a", "on-secondary": "#003824", "on-primary-container": "#315200", "inverse-on-surface": "#283044", "on-error": "#690005", "surface-bright": "#31394d", "outline": "#8b947d", "tertiary": "#74e3ff", "secondary-fixed": "#6ffbbe", "on-secondary-fixed": "#002113", "on-primary-fixed": "#102000", "tertiary-container": "#37c9e7", "on-surface": "#dae2fd", "on-background": "#dae2fd", "on-primary-fixed-variant": "#304f00", "secondary-container": "#00a572", "background": "#0b1326", "outline-variant": "#424936", "surface-container-low": "#131b2e", "on-tertiary-fixed": "#001f26", "on-error-container": "#ffdad6", "surface-tint": "#91db2a", "error": "#ffb4ab", "surface-container-high": "#222a3d", "on-secondary-fixed-variant": "#005236", "surface": "#0b1326", "on-tertiary": "#003640", "secondary-fixed-dim": "#4edea3", "inverse-surface": "#dae2fd", "primary": "#9ee939", "on-tertiary-container": "#00515f", "surface-container-highest": "#2d3449", "on-secondary-container": "#00311f", "on-tertiary-fixed-variant": "#004e5c", "secondary": "#4edea3", "tertiary-fixed-dim": "#4cd7f6", "surface-container-lowest": "#060e20", "primary-fixed": "#acf847", "surface-variant": "#2d3449", "on-primary": "#1f3700", "surface-dim": "#0b1326" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "margin": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem" }, "fontFamily": { "label-sm": [ "Space Grotesk" ], "display-lg-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "display-stat-mobile": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "display-lg": [ "Space Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "title-md": [ "Hanken Grotesk" ], "display-stat": [ "Space Grotesk" ], "body-md": [ "Hanken Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-md": [ "Space Grotesk" ] }, "fontSize": { "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "display-lg-mobile": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-stat-mobile": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-lg": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "display-stat": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.04em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><img alt="PulseFit Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTdMD7Je2fDvj5RiyHhQ6wh_aSVYyB_6uKiCxJWWzNUuO0nP3cP469suVMUECAfa3gLAz9ravOyh-C8cCfijLZh9zPoMbrIkq-6mT4ou_P0z2NG_2gwn9k70nHsDYDRtLG2K64-dBaqfzrSyx-V8WzKbeeu1b8X8AwfQwbJWEoweR45PN9CuAIDqfFfeoZjCL9fPHdoFdqqgZMh7C9JaNdr-OC5axqal0Kh3EV61jQuGDFJS3osWtY"/><span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">Pulse<span class="text-primary">Fit</span></span></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-title-md"><a aria-current="page" class="px-space-md py-space-sm rounded-xl transition-all bg-surface-container-high text-primary font-title-md" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="catat-aktivitas" href="#">Catat Aktivitas</a><a class="px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="riwayat-latihan" href="#">Riwayat Latihan</a><a class="px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="komunitas-target" href="#">Komunitas &amp; Target</a></nav></div><div class="flex items-center gap-space-md shrink-0"><button class="flex items-center gap-space-xs bg-primary hover:bg-primary-fixed-dim text-on-primary px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline">Mulai Latihan</span></button><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high text-primary-fixed font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-primary">local_fire_department</span><span>14 Hari</span></div><button class="relative w-10 h-10 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6UVs3MXWQ8nGuHL_5ZcmG73KAE-fTEW_fmyus4llHehMulCZUxWkwT2ZYBety7B9yqppB-AUGeYk0aTKOlyPjuTzEfiDTUSloIDS1B5AuXWQo1JCx9vylXsxiQ45CoB8N9IyqZnjgdGuI2vbwqR_rcLRD1L7bu2tW26hyX7HzVNBNfzI51Vcc9P-6Ya3S08L6dEnMO15iuELuQxOjxnOJKr1weC7kaaavmiFoH6gwTalHKHp0V1u_"/><div class="hidden md:flex flex-col"><span class="font-title-md text-body-md text-on-surface leading-tight">Rian Pratama</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pro Athlete</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin pt-space-md md:pt-space-lg pb-space-xl">
+<div class="absolute -top-12 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 right-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Section: Header Greeting -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Sesi Aktif • GPS Terhubung</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Semangat Pagi, Rian! <span class="inline-block hover:scale-125 transition-transform duration-200 cursor-default">🔥</span> <span class="text-primary">14 Hari</span> Berturut-turut
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Konsistensi Anda berada di level elit. Tinggal 2 sesi lagi untuk melampaui rekor mingguan Anda di bulan ini!
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="bg-surface-container-high px-space-md py-space-sm rounded-xl flex items-center gap-space-sm shadow-md">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">cloud_sync</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Sinkronisasi Terakhir</span>
+<span class="font-label-md text-label-md text-on-surface">Baru Saja • Garmin Pro</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Top KPI Stat Cards (4 Columns) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+<!-- Card 1: Kalori Terbakar -->
+<div class="group relative bg-surface-container rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+<div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-primary to-transparent opacity-80"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Kalori Terbakar Hari Ini</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-stat text-display-stat text-on-surface tracking-tighter">640</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">/ 800</span>
+<span class="font-label-md text-label-md text-primary font-bold ml-space-xs">kkal</span>
+</div>
+</div>
+<div class="mt-space-md space-y-space-xs">
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant">
+<span>Progress Target Harian</span>
+<span class="text-primary font-bold">80%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full rounded-full bg-primary transition-all duration-1000 shadow-[0_0_12px_rgba(158,233,57,0.8)]" style="width: 80%;"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: Durasi Latihan -->
+<div class="group relative bg-surface-container rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+<div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-secondary to-transparent opacity-50"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Durasi Latihan Minggu Ini</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-stat text-display-stat text-on-surface tracking-tighter">4<span class="text-headline-sm">j</span> 45<span class="text-headline-sm">m</span></span>
+</div>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">trending_up</span>
+<span class="font-label-md text-label-md text-secondary font-bold">+15%</span>
+<span class="font-body-md text-label-sm text-on-surface-variant">dibanding minggu lalu</span>
+</div>
+</div>
+<!-- Card 3: Jarak Kardio -->
+<div class="group relative bg-surface-container rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+<div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-tertiary to-transparent opacity-50"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Jarak Kardio Minggu Ini</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[18px]">directions_run</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-stat text-display-stat text-on-surface tracking-tighter">24.8</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">km</span>
+</div>
+</div>
+<div class="mt-space-md space-y-space-xs">
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant">
+<span>Sasaran: 30 km</span>
+<span class="text-tertiary font-bold">Sisa 5.2 km</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full rounded-full bg-tertiary transition-all duration-1000 shadow-[0_0_12px_rgba(116,227,255,0.7)]" style="width: 82.6%;"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Streak Aktif -->
+<div class="group relative bg-surface-container rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+<div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-primary-fixed-dim to-transparent opacity-50"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Streak Aktif</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed group-hover:bg-primary-fixed group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-stat text-display-stat text-primary tracking-tighter">14</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Hari</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">military_tech</span>
+<span>Rekor Pribadi: <strong class="text-on-surface">21 Hari</strong></span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-space-xs py-0.5 rounded text-primary">Level 4</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Main Content Grid (8 Cols Left, 4 Cols Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT COLUMN (8 Columns) -->
+<div class="lg:col-span-8 space-y-gutter">
+<!-- 2.1 Quick Action Banner & Recent Recap Card -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Action Callout -->
+<div class="md:col-span-5 bg-gradient-to-br from-surface-container to-surface-container-high p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="space-y-space-xs relative z-10">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Mulai Berolahraga</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Siap Membakar Kalori Sekarang?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs">Pilih mode sensor detak jantung atau rekam rute GPS terkini.</p>
+</div>
+<button class="mt-space-md flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-fixed-dim text-on-primary font-headline-sm text-title-md py-space-sm px-space-md rounded-xl shadow-[0_0_20px_rgba(158,233,57,0.3)] hover:scale-[1.02] active:scale-[0.98] transition-all relative z-10" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Catat Latihan Baru</span>
+</button>
+<div class="absolute -bottom-6 -right-6 w-24 h-24 rounded-full bg-primary/10 blur-xl"></div>
+</div>
+<!-- Recent Session Recap Card -->
+<div class="md:col-span-7 bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Sesi Terakhir Tercatat</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tadi Pagi • 06:15 WIB</span>
+</div>
+<div class="flex items-center justify-between my-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Lari Pagi Gelora</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Rute Jalur Hijau Senayan</p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">sprint</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs pt-space-sm bg-surface-container-low/60 rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jarak</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">5.2 <span class="text-xs font-normal text-on-surface-variant">km</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Energi</span>
+<span class="font-headline-sm text-headline-sm text-primary">320 <span class="text-xs font-normal text-on-surface-variant">kkal</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Durasi</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">28 <span class="text-xs font-normal text-on-surface-variant">mnt</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- 2.2 Activity Trends Chart (Interactive Telemetry) -->
+<div class="bg-surface-container rounded-xl p-space-md md:p-space-lg shadow-md space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">monitoring</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Tren Aktivitas Mingguan</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Perbandingan volume kalori harian dan total menit latihan aktif</p>
+</div>
+<!-- Chart Category Pills -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl self-start">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md transition-colors" type="button">Semua</button>
+<button class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="w-2 h-2 rounded-full bg-primary"></span>Lari
+              </button>
+<button class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>Sepeda
+              </button>
+<button class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>Gym
+              </button>
+</div>
+</div>
+<!-- SVG Visual Chart with interactive hovering -->
+<div class="relative w-full pt-4">
+<!-- Tooltip dynamic display on hover -->
+<div class="absolute hidden bg-surface-container-highest/95 backdrop-blur-md px-space-sm py-space-xs rounded-lg shadow-xl pointer-events-none text-left z-20" id="chart-tooltip">
+<span class="font-label-sm text-label-sm text-primary block" id="tooltip-day">Senin</span>
+<span class="font-title-md text-title-md text-on-surface font-bold" id="tooltip-cal">520 kkal</span>
+<span class="font-body-md text-label-sm text-on-surface-variant block" id="tooltip-min">45 Menit</span>
+</div>
+<div class="w-full h-64 flex items-end justify-between gap-2 sm:gap-4 px-2 pt-6 pb-2">
+<!-- Monday -->
+<div class="flex-1 flex flex-col items-center gap-2 group/bar cursor-pointer" data-cal="520 kkal" data-day="Senin" data-min="42 Menit (Lari &amp; Gym)">
+<div class="w-full flex items-end justify-center gap-1 h-48 bg-surface-container-low/40 rounded-t-lg p-1 group-hover/bar:bg-surface-container-high transition-colors">
+<div class="w-full max-w-[16px] rounded-t-sm bg-primary transition-all duration-300 group-hover/bar:brightness-125" style="height: 65%;"></div>
+<div class="w-full max-w-[16px] rounded-t-sm bg-secondary transition-all duration-300 opacity-70" style="height: 40%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover/bar:text-on-surface">SEN</span>
+</div>
+<!-- Tuesday -->
+<div class="flex-1 flex flex-col items-center gap-2 group/bar cursor-pointer" data-cal="680 kkal" data-day="Selasa" data-min="55 Menit (Sepeda Luar)">
+<div class="w-full flex items-end justify-center gap-1 h-48 bg-surface-container-low/40 rounded-t-lg p-1 group-hover/bar:bg-surface-container-high transition-colors">
+<div class="w-full max-w-[16px] rounded-t-sm bg-primary transition-all duration-300 group-hover/bar:brightness-125" style="height: 85%;"></div>
+<div class="w-full max-w-[16px] rounded-t-sm bg-tertiary transition-all duration-300 opacity-70" style="height: 50%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover/bar:text-on-surface">SEL</span>
+</div>
+<!-- Wednesday -->
+<div class="flex-1 flex flex-col items-center gap-2 group/bar cursor-pointer" data-cal="450 kkal" data-day="Rabu" data-min="35 Menit (Strength Gym)">
+<div class="w-full flex items-end justify-center gap-1 h-48 bg-surface-container-low/40 rounded-t-lg p-1 group-hover/bar:bg-surface-container-high transition-colors">
+<div class="w-full max-w-[16px] rounded-t-sm bg-primary transition-all duration-300 group-hover/bar:brightness-125" style="height: 56%;"></div>
+<div class="w-full max-w-[16px] rounded-t-sm bg-secondary transition-all duration-300 opacity-70" style="height: 35%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover/bar:text-on-surface">RAB</span>
+</div>
+<!-- Thursday -->
+<div class="flex-1 flex flex-col items-center gap-2 group/bar cursor-pointer" data-cal="720 kkal" data-day="Kamis" data-min="60 Menit (Lari Tempo)">
+<div class="w-full flex items-end justify-center gap-1 h-48 bg-surface-container-low/40 rounded-t-lg p-1 group-hover/bar:bg-surface-container-high transition-colors">
+<div class="w-full max-w-[16px] rounded-t-sm bg-primary transition-all duration-300 group-hover/bar:brightness-125 shadow-[0_0_8px_rgba(158,233,57,0.5)]" style="height: 90%;"></div>
+<div class="w-full max-w-[16px] rounded-t-sm bg-secondary transition-all duration-300 opacity-70" style="height: 60%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover/bar:text-on-surface">KAM</span>
+</div>
+<!-- Friday -->
+<div class="flex-1 flex flex-col items-center gap-2 group/bar cursor-pointer" data-cal="380 kkal" data-day="Jumat" data-min="30 Menit (Pemulihan Aktif)">
+<div class="w-full flex items-end justify-center gap-1 h-48 bg-surface-container-low/40 rounded-t-lg p-1 group-hover/bar:bg-surface-container-high transition-colors">
+<div class="w-full max-w-[16px] rounded-t-sm bg-primary transition-all duration-300 group-hover/bar:brightness-125" style="height: 45%;"></div>
+<div class="w-full max-w-[16px] rounded-t-sm bg-tertiary transition-all duration-300 opacity-70" style="height: 25%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover/bar:text-on-surface">JUM</span>
+</div>
+<!-- Saturday -->
+<div class="flex-1 flex flex-col items-center gap-2 group/bar cursor-pointer" data-cal="820 kkal" data-day="Sabtu" data-min="75 Menit (Long Run Akhir Pekan)">
+<div class="w-full flex items-end justify-center gap-1 h-48 bg-surface-container-low/40 rounded-t-lg p-1 group-hover/bar:bg-surface-container-high transition-colors">
+<div class="w-full max-w-[16px] rounded-t-sm bg-primary transition-all duration-300 group-hover/bar:brightness-125 shadow-[0_0_12px_rgba(158,233,57,0.8)]" style="height: 100%;"></div>
+<div class="w-full max-w-[16px] rounded-t-sm bg-secondary transition-all duration-300 opacity-70" style="height: 80%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">SAB</span>
+</div>
+<!-- Sunday (Today) -->
+<div class="flex-1 flex flex-col items-center gap-2 group/bar cursor-pointer" data-cal="640 kkal" data-day="Minggu (Hari Ini)" data-min="45 Menit (Sesi Berjalan)">
+<div class="w-full flex items-end justify-center gap-1 h-48 bg-surface-container-high/60 rounded-t-lg p-1 ring-1 ring-primary/40 group-hover/bar:bg-surface-container-high transition-colors">
+<div class="w-full max-w-[16px] rounded-t-sm bg-primary transition-all duration-300 group-hover/bar:brightness-125" style="height: 78%;"></div>
+<div class="w-full max-w-[16px] rounded-t-sm bg-tertiary transition-all duration-300 opacity-70" style="height: 45%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">MIN</span>
+</div>
+</div>
+<!-- Legend Info -->
+<div class="flex items-center justify-center gap-space-lg pt-space-sm border-t border-surface-container-high text-label-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-3 h-3 rounded-sm bg-primary"></div>
+<span class="text-on-surface-variant">Kalori Terbakar (kkal)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-3 h-3 rounded-sm bg-secondary"></div>
+<span class="text-on-surface-variant">Waktu Aktif (Menit)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 2.3 Weekly Target Goals Progress -->
+<div class="bg-surface-container rounded-xl p-space-md md:p-space-lg shadow-md space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Target Mingguan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Pantau capaian target siklus 7 hari berjalan</p>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-space-sm py-space-xs rounded-full">3 Sasaran Aktif</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Goal 1: Lari 15 km -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Kardio Lapangan</span>
+<span class="material-symbols-outlined text-primary text-[20px]">directions_run</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Lari 15 km</h4>
+<p class="font-body-md text-label-sm text-on-surface-variant">Tercapai <span class="text-on-surface font-bold">12 km</span> (80%)</p>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 80%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary block">Sisa 3.0 km lagi</span>
+</div>
+<!-- Goal 2: Gym 3x -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Beban &amp; Otot</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">fitness_center</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Gym 3x Seminggu</h4>
+<p class="font-body-md text-label-sm text-on-surface-variant">Selesai <span class="text-on-surface font-bold">2/3 Sesi</span> (66%)</p>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full rounded-full bg-secondary" style="width: 66%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary block">1 Sesi lagi dijadwalkan besok</span>
+</div>
+<!-- Goal 3: Kalori 3500 kkal -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Target Total Energi</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">whatshot</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Target Kalori 3500 kkal</h4>
+<p class="font-body-md text-label-sm text-on-surface-variant">Tercapai <span class="text-on-surface font-bold">3,100 kkal</span> (88%)</p>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full rounded-full bg-tertiary" style="width: 88.5%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary block">Hanya 400 kkal lagi tercapai!</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (4 Columns) -->
+<div class="lg:col-span-4 space-y-gutter">
+<!-- 2.4 Badge & Milestone Showcase -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">military_tech</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pencapaian Terbaru</h3>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline uppercase" href="#">Lihat Semua</a>
+</div>
+<div class="space-y-space-sm">
+<!-- Badge 1 -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-primary/30 to-primary/10 flex items-center justify-center text-primary shadow-[0_0_15px_rgba(158,233,57,0.2)] shrink-0">
+<span class="material-symbols-outlined text-[26px]">wb_twilight</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-title-md text-body-md text-on-surface font-bold truncate">Early Bird Runner</h4>
+<p class="font-body-md text-label-sm text-on-surface-variant truncate">Olahraga konsisten sebelum jam 06:00</p>
+<span class="font-label-sm text-[10px] text-primary">Baru Diperoleh Kemarin</span>
+</div>
+</div>
+<!-- Badge 2 -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-secondary/30 to-secondary/10 flex items-center justify-center text-secondary shadow-[0_0_15px_rgba(78,222,163,0.2)] shrink-0">
+<span class="material-symbols-outlined text-[26px]">sports_kabaddi</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-title-md text-body-md text-on-surface font-bold truncate">Weekend Warrior</h4>
+<p class="font-body-md text-label-sm text-on-surface-variant truncate">Dua sesi intensif di hari Sabtu &amp; Minggu</p>
+<span class="font-label-sm text-[10px] text-secondary">Terbuka 3 Hari Lalu</span>
+</div>
+</div>
+<!-- Badge 3 -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-tertiary/30 to-tertiary/10 flex items-center justify-center text-tertiary shadow-[0_0_15px_rgba(116,227,255,0.2)] shrink-0">
+<span class="material-symbols-outlined text-[26px]">workspace_premium</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-title-md text-body-md text-on-surface font-bold truncate">Kalori Master 5K</h4>
+<p class="font-body-md text-label-sm text-on-surface-variant truncate">Akumulasi pembakaran 5,000 kkal aktif</p>
+<span class="font-label-sm text-[10px] text-tertiary">Level Emas Diraih</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 2.5 Quick Leaderboard Mini-Widget -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">leaderboard</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Klasemen Teman</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Minggu Ini</span>
+</div>
+<div class="space-y-space-xs">
+<!-- Rank 1: Sarah -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 font-display-stat text-title-md text-primary font-bold">1</span>
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait of Sarah, a fit Indonesian woman athlete smiling outdoors wearing athletic running gear, natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAszXfv-XEodT-CxtxFZlrysJnehPWx5MKg3mnW7LcA-GzwwAseYtM1w_lTP9uDQRnYDtjEuovFl03kYr27hAcHdmKNrAQY20HrPaQb21NbUZu5azVE2bKJx-vWz7uRIWlbpxpofaBzI2FKWtey0Q_10j7BMUTDF2bIQ70bVw6s9oHimrqP6OfLQHkcJEZDdYawq8rt8M4LXImHpNhRcnD80H6wGm9BiXSTbQNaTvKyBynfK9BRVU4B"/>
+<div class="flex flex-col">
+<span class="font-title-md text-body-md text-on-surface font-semibold">Sarah Amanda</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6 Sesi Latihan</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-body-md text-primary font-bold">3,400</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">kkal</span>
+</div>
+</div>
+<!-- Rank 2: Rian (User Highlighted) -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-primary/10 border-l-4 border-primary hover:bg-primary/20 transition-colors shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 font-display-stat text-title-md text-primary font-bold">2</span>
+<img alt="Profile Rian" class="w-9 h-9 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6UVs3MXWQ8nGuHL_5ZcmG73KAE-fTEW_fmyus4llHehMulCZUxWkwT2ZYBety7B9yqppB-AUGeYk0aTKOlyPjuTzEfiDTUSloIDS1B5AuXWQo1JCx9vylXsxiQ45CoB8N9IyqZnjgdGuI2vbwqR_rcLRD1L7bu2tW26hyX7HzVNBNfzI51Vcc9P-6Ya3S08L6dEnMO15iuELuQxOjxnOJKr1weC7kaaavmiFoH6gwTalHKHp0V1u_"/>
+<div class="flex flex-col">
+<span class="font-title-md text-body-md text-on-surface font-bold flex items-center gap-1">
+                    Rian Pratama
+                    <span class="bg-primary text-on-primary text-[9px] font-bold px-1.5 py-0.2 rounded uppercase">Anda</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary">5 Sesi Latihan</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-body-md text-primary font-bold">3,100</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">kkal</span>
+</div>
+</div>
+<!-- Rank 3: Dimas -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 font-display-stat text-title-md text-on-surface-variant font-bold">3</span>
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait of Dimas, a focused male cyclist wearing athletic apparel with dark modern gym background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwfnD3dTczM_J8Mxs7LYIY-PWW-4xuf5_t00Ck2ol0Mh-xSPn0TpxycHB8lGLxr06zBRjSDrMc6c0UvwXf5qnh1slnSiVrAFiGABlyJqbeljC5SpotEIi15JlhfWwfkf8PuIcsGV189kjr9VCNQgSVvFd1JfzCzubWxacVNK6eeWRlY5hQYSVFenKhmno4AymXRDRMQ725WCpTltDLxZgLDqiT4yeTL1biGoQKmIEo3r6NOy8UaqwF"/>
+<div class="flex flex-col">
+<span class="font-title-md text-body-md text-on-surface font-semibold">Dimas Setiawan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Sesi Latihan</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-body-md text-on-surface font-bold">2,850</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">kkal</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Selisih <span class="text-primary font-bold">300 kkal</span> untuk memimpin posisi pertama!</p>
+</div>
+</div>
+<!-- 2.6 Body Metrics Snapshot -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">monitor_weight</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Metrik Tubuh</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-space-sm py-space-xs rounded-full">Kondisi Ideal</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm text-center">
+<!-- Berat -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Berat</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">68.5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">kg</span>
+</div>
+<!-- BMI -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">BMI</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold mt-1">22.4</span>
+<span class="font-label-sm text-label-sm text-secondary">Normal</span>
+</div>
+<!-- BMR -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">BMR</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">1,650</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">kkal/hari</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-high/60 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">favorite</span>
+<span class="font-body-md text-label-sm text-on-surface">Detak Jantung Istirahat</span>
+</div>
+<span class="font-title-md text-body-md text-primary font-bold">54 BPM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Script for Chart Hover Tooltip -->
+<script>
+    (function() {
+      const bars = document.querySelectorAll('.group\\/bar');
+      const tooltip = document.getElementById('chart-tooltip');
+      const dayEl = document.getElementById('tooltip-day');
+      const calEl = document.getElementById('tooltip-cal');
+      const minEl = document.getElementById('tooltip-min');
+
+      bars.forEach(bar => {
+        bar.addEventListener('mouseenter', (e) => {
+          const day = bar.getAttribute('data-day');
+          const cal = bar.getAttribute('data-cal');
+          const min = bar.getAttribute('data-min');
+
+          dayEl.textContent = day;
+          calEl.textContent = cal;
+          minEl.textContent = min;
+
+          tooltip.classList.remove('hidden');
+          const rect = bar.getBoundingClientRect();
+          const parentRect = bar.closest('.relative').getBoundingClientRect();
+          
+          tooltip.style.left = (rect.left - parentRect.left + (rect.width / 2) - 60) + 'px';
+          tooltip.style.top = (rect.top - parentRect.top - 55) + 'px';
+        });
+
+        bar.addEventListener('mouseleave', () => {
+          tooltip.classList.add('hidden');
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.15)]"><div class="max-w-[1440px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-md text-body-md"><div class="flex items-center gap-space-sm"><img alt="PulseFit Brand Logo" class="h-6 w-auto object-contain grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTdMD7Je2fDvj5RiyHhQ6wh_aSVYyB_6uKiCxJWWzNUuO0nP3cP469suVMUECAfa3gLAz9ravOyh-C8cCfijLZh9zPoMbrIkq-6mT4ou_P0z2NG_2gwn9k70nHsDYDRtLG2K64-dBaqfzrSyx-V8WzKbeeu1b8X8AwfQwbJWEoweR45PN9CuAIDqfFfeoZjCL9fPHdoFdqqgZMh7C9JaNdr-OC5axqal0Kh3EV61jQuGDFJS3osWtY"/><span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">© 2024 PulseFit Performance Labs. Hak cipta dilindungi.</span></div><div class="flex items-center gap-space-lg font-label-md text-label-md text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Privasi</a><a class="hover:text-primary transition-colors" href="#">Syarat Layanan</a><a class="hover:text-primary transition-colors" href="#">Dukungan Sensor &amp; GPS</a></div></div></footer></body></html>
