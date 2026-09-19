@@ -1,15 +1,16 @@
 import { TIPS_IMG } from '../../data/logActivity.js'
 
-export function FormActions({ onSubmit, onReset }) {
+export function FormActions({ onSubmit, onReset, saving }) {
   return (
     <div className="flex flex-col sm:flex-row items-center gap-space-sm pt-space-xs">
       <button
         type="button"
         onClick={onSubmit}
-        className="w-full sm:flex-1 bg-primary hover:bg-primary-fixed-dim text-on-primary py-space-md rounded-xl font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-space-xs shadow-lg transition-transform active:scale-[0.99]"
+        disabled={saving}
+        className="w-full sm:flex-1 bg-primary hover:bg-primary-fixed-dim disabled:opacity-60 text-on-primary py-space-md rounded-xl font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-space-xs shadow-lg transition-transform active:scale-[0.99]"
       >
-        <span className="material-symbols-outlined text-[22px]">save</span>
-        <span>Simpan Aktivitas Latihan</span>
+        <span className="material-symbols-outlined text-[22px]">{saving ? 'progress_activity' : 'save'}</span>
+        <span>{saving ? 'Menyimpan ke Supabase...' : 'Simpan Aktivitas Latihan'}</span>
       </button>
       <button
         type="button"

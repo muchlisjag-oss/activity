@@ -78,6 +78,68 @@ npm run build
 npm run preview
 ```
 
+## Supabase (Catat Aktivitas → database)
+
+1. Di Supabase Dashboard → **SQL Editor → New query**, jalankan isi file
+   `supabase/schema.sql` (membuat tabel `public.activities` + RLS policy demo).
+2. Pastikan `.env` berisi (sudah ada di project ini):
+   ```env
+   VITE_SUPABASE_URL=https://tnhufzjhfsqehelljjei.supabase.co
+   VITE_SUPABASE_ANON_KEY=eyJhbGciOi...
+   ```
+   Contoh tanpa secret: lihat `.env.example`.
+3. Install dependency baru lalu jalankan:
+   ```cmd
+   npm.cmd install
+   npm.cmd run dev
+   ```
+4. Buka `#/catat-aktivitas`:
+   - **Simpan Aktivitas Latihan** → insert ke tabel `activities` (dengan hasil
+     kalkulasi kalori/pace/BMI/BMR), tombol berubah menjadi
+     “Menyimpan ke Supabase...” saat proses berjalan.
+   - **Riwayat Aktivitas Tersimpan** di bawah formulir menampilkan 50 sesi
+     terbaru dari Supabase (nama, olahraga, tanggal, durasi, jarak, intensitas,
+     mood, catatan, kkal, pace) + total sesi/kkal, tombol **Muat Ulang** dan
+     **hapus** per baris.
+   - Jika tabel belum dibuat / RLS menolak / env kosong, muncul banner error
+     yang menjelaskan penyebabnya.
+
+## Skema database (`supabase/schema.sql`)
+
+```sql
+create table public.activities (
+  id uuid primary key default gen_random_uuid(),
+  created_at timestamptz not null default now(),
+  session_name text not null default 'Sesi Latihan',
+  sport_id text not null,
+  sport_label text not null,
+  session_date date not null,
+  start_time time,
+  duration_hours int not null default 0,
+  duration_minutes int not null default 0,
+  total_minutes int generated always as (duration_hours*60+duration_minutes) stored,
+  distance_km numeric(6,2) not null default 0,
+  intensity_id text not null default 'moderate',
+  mood_id text not null default 'energetic',
+  notes text not null default '',
+  weight_kg numeric(5,2) not null,
+  height_cm numeric(5,2) not null,
+  age int not null,
+  gender text not null default 'male',
+  met numeric(5,2) not null,
+  calories int not null default 0,
+  pace text not null default '-',
+  bmi numeric(4,2),
+  bmr int
+);
+-- + index created_at/sport_id/session_date
+-- + RLS enable + policy select/insert/delete untuk demo anon key
+```
+
+File terkait: `src/lib/supabaseClient.js`, `src/hooks/useActivities.js`
+(fetch/insert/delete + status koneksi), `src/components/log/ActivityHistory.jsx`
+(+ `HistoryRow.jsx`, `HistoryStatus.jsx`, `historyHelpers.js`).
+
 ## Logika (port 1:1 dari `<script>` desain catat-aktivitas)
 
 - Kalori: `MET × intensitas × 3.5 × BB / 200 × menit`, progress vs target harian 650 kkal.

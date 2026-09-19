@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { INTENSITIES, SPORTS } from '../data/logActivity.js'
 import { useLogCalculations } from '../hooks/useLogCalculations.js'
+import { useActivities } from '../hooks/useActivities.js'
 import LogHero from '../components/log/LogHero.jsx'
 import SportSelector from '../components/log/SportSelector.jsx'
 import SessionMeta from '../components/log/SessionMeta.jsx'
@@ -10,6 +11,7 @@ import NotesMood from '../components/log/NotesMood.jsx'
 import CalorieCard from '../components/log/CalorieCard.jsx'
 import BiometricsCard from '../components/log/BiometricsCard.jsx'
 import SyncCard, { RecordBanner } from '../components/log/SyncCard.jsx'
+import ActivityHistory from '../components/log/ActivityHistory.jsx'
 import { FormActions, TipsCard } from '../components/log/FormActions.jsx'
 
 const DEFAULTS = {
@@ -46,6 +48,8 @@ export default function LogActivityPage({ showToast }) {
   const [age, setAge] = useState(DEFAULTS.age)
   const [strava, setStrava] = useState(true)
   const [googleFit, setGoogleFit] = useState(true)
+  const [savingForm, setSavingForm] = useState(false)
+  const { items, loading, error, connectionOk, refresh, saveActivity, deleteActivity } = useActivities()
 
   const sport = SPORTS.find((s) => s.id === sportId) ?? SPORTS[0]
   const intensity = INTENSITIES.find((i) => i.id === intensityId) ?? INTENSITIES[1]
@@ -58,9 +62,38 @@ export default function LogActivityPage({ showToast }) {
     else if (Number(distance) === 0) setDistance(5.0)
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const name = sessionName.trim() || 'Sesi Latihan'
-    showToast('Aktivitas Berhasil Dicatat!', `${name} (~${calc.calories}) tersimpan di rekam jejak PulseFit.`, true)
+    setSavingForm(true)
+    const payload = {
+      session_name: name,
+      sport_id: sport.id,
+      sport_label: sport.label,
+      session_date: date,
+      start_time: time || null,
+      duration_hours: Number(hours) || 0,
+      duration_minutes: Number(minutes) || 0,
+      distance_km: Number(distance) || 0,
+      intensity_id: intensity.id,
+      mood_id: mood,
+      notes: notes.trim(),
+      weight_kg: weight,
+      height_cm: height,
+      age,
+      gender,
+      met: sport.met,
+      calories: calc.calories,
+      pace: calc.pace,
+      bmi: Number(calc.bmi.toFixed(2)),
+      bmr: Math.round(calc.bmr),
+    }
+    const res = await saveActivity(payload)
+    setSavingForm(false)
+    if (res.ok) {
+      showToast('Aktivitas Berhasil Dicatat!', `${name} (~${calc.calories} kkal) tersimpan ke Supabase.`, true)
+    } else {
+      showToast('Gagal Menyimpan', res.message, false)
+    }
   }
 
   const handleReset = () => {
@@ -107,9 +140,18 @@ export default function LogActivityPage({ showToast }) {
             />
             <IntensitySelector intensityId={intensityId} onSelect={setIntensityId} />
             <NotesMood notes={notes} onNotes={setNotes} mood={mood} onMood={setMood} />
-            <FormActions onSubmit={handleSubmit} onReset={handleReset} />
+            <FormActions onSubmit={handleSubmit} onReset={handleReset} saving={savingForm} />
           </div>
           <TipsCard />
+          <ActivityHistory
+            items={items}
+            loading={loading}
+            error={error}
+            connectionOk={connectionOk}
+            onRefresh={refresh}
+            onDelete={deleteActivity}
+            showToast={showToast}
+          />
         </div>
         <div className="lg:col-span-5 flex flex-col gap-space-md">
           <CalorieCard
